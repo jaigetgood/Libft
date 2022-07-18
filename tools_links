@@ -1,0 +1,17 @@
+FRANCINETTE:
+
+https://github.com/xicodomingues/francinette
+works for libft, ft_printf, get_next_line, minitalk and pipex
+
+bash for install:
+
+bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh)"
+
+NORMINETTE:
+https://github.com/42School/norminette
+
+REQUIRES PYTHON 3.7+
+
+PIP:
+python3 -m pip install --upgrade pip setuptools
+python3 -m pip install norminette
