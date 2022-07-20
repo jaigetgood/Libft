@@ -15,3 +15,71 @@ REQUIRES PYTHON 3.7+
 PIP:
 python3 -m pip install --upgrade pip setuptools
 python3 -m pip install norminette
+
+CURRENT NOTES:
+
+LIBFT
+https://cdn.intra.42.fr/pdf/pdf/54121/en.subject.pdf
+
+https://docs.google.com/document/d/1qFLBmnr2daX1P5d8VZxdtetAGpHwkT3gpLQMLSwlACY/edit
+
+PART II - NOT IN MAN:
+ft_substr
+ft_strjoin
+ft_strtrim
+ft_split
+ft_strmapi
+ft_striteri
+
+FILE DESCRIPTORS:
+(https://www.youtube.com/watch?v=KM5sRWAYqaw)
+
+(https://www.gnu.org/software/libc/manual/html_node/Streams-and-File-Descriptors.html)
+
+ft_putchar_fd
+ft_putstr_fd
+ft_putendl_fd
+ft_putendl_fd
+ft_putnbr_fd
+
+
+BONUS:
+LINKED LISTS
+
+ft_lstnew
+ft_lstsize
+ft_lstadd_back
+ft_lstadd_front
+ft_lstlast
+ft_lstdelone
+ft_lstclear
+ft_lstiter
+ft_lstmap
+
+
+Completed:
+PART I:
+•memcmp
+•memcpy
+•memchr
+•memmove
+•strnstr
+•strlcat
+•strchr
+•strrchr
+•strlcpy
+•memset
+•strdup
+•calloc
+•atoi
+•bzero
+•strncmp
+•strlen
+•isalpha
+•isdigit
+•isalnum
+•isascii
+•isprint
+•toupper
+•tolower
+• ft_itoa
