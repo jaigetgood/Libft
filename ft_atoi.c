@@ -6,7 +6,7 @@
 /*   By: jgetgood <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 11:02:43 by jgetgood          #+#    #+#             */
-/*   Updated: 2022/07/08 15:43:09 by jgetgood         ###   ########.fr       */
+/*   Updated: 2022/07/20 20:04:59 by jgetgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_atoi(const char *str)
 	}
 	while (ft_isdigit(str[i]))
 	{
-		res = result * 10 + (str[i] - '0');
+		res = res * 10 + (str[i] - '0');
 		i++;
 	}
 	if (neg)
