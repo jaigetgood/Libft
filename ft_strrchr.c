@@ -6,7 +6,7 @@
 /*   By: jgetgood <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 13:08:33 by jgetgood          #+#    #+#             */
-/*   Updated: 2022/07/18 13:17:09 by jgetgood         ###   ########.fr       */
+/*   Updated: 2022/07/22 20:02:41 by jgetgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,4 @@ char	*ft_strrchr(const char *s, int c)
 	if (s[i] == c)
 		ptr = ((char *)s + i);
 	return (ptr);
+}

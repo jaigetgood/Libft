@@ -6,7 +6,7 @@
 /*   By: jgetgood <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 15:43:47 by jgetgood          #+#    #+#             */
-/*   Updated: 2022/07/08 16:09:04 by jgetgood         ###   ########.fr       */
+/*   Updated: 2022/07/22 20:26:08 by jgetgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,11 +41,11 @@ char	*ft_itoa(int n)
 		sign = -1;
 	}
 	res = ft_calloc((digits + 1), sizeof(char));
-	if (!result)
+	if (!res)
 		return (0);
 	while (digits + sign)
 	{
-		result[digits - 1] = (num % 10 + '0');
+		res[digits - 1] = (num % 10 + '0');
 		num /= 10;
 		digits--;
 	}
