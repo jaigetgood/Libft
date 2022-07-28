@@ -23,8 +23,6 @@ https://cdn.intra.42.fr/pdf/pdf/54121/en.subject.pdf
 
 https://docs.google.com/document/d/1qFLBmnr2daX1P5d8VZxdtetAGpHwkT3gpLQMLSwlACY/edit
 
-PART II - NOT IN MAN:
-
 FILE DESCRIPTORS:
 (https://www.youtube.com/watch?v=KM5sRWAYqaw)
 
@@ -35,6 +33,8 @@ https://www.youtube.com/watch?v=uLgdmGVmEUI
 TO BE FIXED
 •strchr
 •strrchr
+
+Substr and & trim timing out, check with other libfts
 
 BONUS:
 LINKED LISTS
