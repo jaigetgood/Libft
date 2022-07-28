@@ -6,7 +6,7 @@
 #    By: jgetgood <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/20 19:59:10 by jgetgood          #+#    #+#              #
-#    Updated: 2022/07/20 20:01:20 by jgetgood         ###   ########.fr        #
+#    Updated: 2022/07/28 17:33:09 by jgetgood         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ CC=cc
 NAME=libft.a
 CFLAGS=-Wall -Wextra -Werror
 OPTIONS=-c -I.
-SRC = ft_alnum.c		\
+SRC = ft_isalnum.c		\
 	   ft_atoi.c		\
 	   ft_bzero.c		\
 	   ft_calloc.c		\
@@ -37,7 +37,17 @@ SRC = ft_alnum.c		\
 	   ft_strnstr.c		\
 	   ft_strrchr.c		\
 	   ft_tolower.c		\
-	   ft_toupper.c
+	   ft_toupper.c		\
+	   ft_substr.c		\
+	   ft_strtrim.c		\
+	   ft_strjoin.c		\
+	   ft_split.c		\
+	   ft_strmapi.c		\
+	   ft_striteri.c	\
+	   ft_putchar_fd.c	\
+	   ft_putnbr_fd.c	\
+	   ft_putstr_fd.c	\
+	   ft_putendl_fd.c	\
 
 OBJ=*.o
 

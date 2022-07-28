@@ -6,7 +6,7 @@
 /*   By: jgetgood <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 11:13:09 by jgetgood          #+#    #+#             */
-/*   Updated: 2022/07/08 15:22:10 by jgetgood         ###   ########.fr       */
+/*   Updated: 2022/07/28 15:51:18 by jgetgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	ft_strlen(const char *str)
 {
 	size_t	i;
 
-	if (str == 0)
+	if (str == NULL)
 		return (0);
 	i = 0;
 	while (str[i] != '\0')

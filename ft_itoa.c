@@ -6,48 +6,54 @@
 /*   By: jgetgood <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 15:43:47 by jgetgood          #+#    #+#             */
-/*   Updated: 2022/07/22 20:26:08 by jgetgood         ###   ########.fr       */
+/*   Updated: 2022/07/28 12:48:10 by jgetgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	countdigits(long int n)
+static unsigned int	ft_numsize(int n)
 {
-	unsigned int	count;
+	unsigned int	len;
 
-	count = 0;
+	if (n == 0)
+		return (1);
+	len = 0;
 	if (n < 0)
+		len += 1;
+	while (n != 0)
 	{
-		count++;
-		n *= -1;
+		n /= 10;
+		len++;
 	}
-	return (count);
+	return (len);
 }
 
 char	*ft_itoa(int n)
 {
-	long int		num;
-	int				sign;
-	char			*res;
-	unsigned int	digits;
+	char			*str;
+	unsigned int	nbr;
+	unsigned int	len;
 
-	num = n;
-	sign = 0;
-	digits = countdigits(num);
-	if (num < 0)
+	len = ft_numsize(n);
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (str == NULL)
+		return (NULL);
+	if (n < 0)
 	{
-		num *= -1;
-		sign = -1;
+		str[0] = '-';
+		nbr = -n;
 	}
-	res = ft_calloc((digits + 1), sizeof(char));
-	if (!res)
-		return (0);
-	while (digits + sign)
+	else
+		nbr = n;
+	if (nbr == 0)
+		str[0] = '0';
+	str[len] = '\0';
+	while (nbr != 0)
 	{
-		res[digits - 1] = (num % 10 + '0');
-		num /= 10;
-		digits--;
+		str[len - 1] = (nbr % 10) + '0';
+		nbr = nbr / 10;
+		len--;
 	}
-	return (res);
+	return (str);
 }
