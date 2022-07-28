@@ -24,24 +24,17 @@ https://cdn.intra.42.fr/pdf/pdf/54121/en.subject.pdf
 https://docs.google.com/document/d/1qFLBmnr2daX1P5d8VZxdtetAGpHwkT3gpLQMLSwlACY/edit
 
 PART II - NOT IN MAN:
-ft_substr
-ft_strjoin
-ft_strtrim
-ft_split
-ft_strmapi
-ft_striteri
 
 FILE DESCRIPTORS:
 (https://www.youtube.com/watch?v=KM5sRWAYqaw)
 
 (https://www.gnu.org/software/libc/manual/html_node/Streams-and-File-Descriptors.html)
 
-ft_putchar_fd
-ft_putstr_fd
-ft_putendl_fd
-ft_putendl_fd
-ft_putnbr_fd
-
+STRCHR:
+https://www.youtube.com/watch?v=uLgdmGVmEUI
+TO BE FIXED
+•strchr
+•strrchr
 
 BONUS:
 LINKED LISTS
@@ -58,15 +51,12 @@ ft_lstmap
 
 
 Completed:
-PART I:
 •memcmp
 •memcpy
 •memchr
 •memmove
 •strnstr
 •strlcat
-•strchr
-•strrchr
 •strlcpy
 •memset
 •strdup
@@ -83,3 +73,14 @@ PART I:
 •toupper
 •tolower
 • ft_itoa
+ft_substr
+ft_strtrim
+ft_strjoin
+ft_split
+ft_strmapi
+ft_striteri
+ft_putnbr_fd
+ft_putstr_fd
+ft_putchar_fd
+ft_putendl_fd
+
