@@ -28,11 +28,14 @@ FILE DESCRIPTORS:
 
 (https://www.gnu.org/software/libc/manual/html_node/Streams-and-File-Descriptors.html)
 
-STRCHR:
+STRCHR: https://git.hexanyn.fr/42/malloc/-/blob/master/libft/ft_strrchr.c
 https://www.youtube.com/watch?v=uLgdmGVmEUI
 TO BE FIXED
 •strchr
 •strrchr
+
+
+
 
 Substr and & trim timing out, check with other libfts
 
