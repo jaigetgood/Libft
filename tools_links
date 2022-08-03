@@ -41,6 +41,8 @@ Substr and & trim timing out, check with other libfts
 
 BONUS:
 LINKED LISTS
+https://www.geeksforgeeks.org/data-structures/linked-list/
+
 
 ft_lstnew
 ft_lstsize
