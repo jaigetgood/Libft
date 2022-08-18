@@ -23,17 +23,16 @@ https://cdn.intra.42.fr/pdf/pdf/54121/en.subject.pdf
 
 https://docs.google.com/document/d/1qFLBmnr2daX1P5d8VZxdtetAGpHwkT3gpLQMLSwlACY/edit
 
+https://github.com/JVanDenHurk/Libft/blob/main/ft_strtrim.c
+
 FILE DESCRIPTORS:
 (https://www.youtube.com/watch?v=KM5sRWAYqaw)
 
 (https://www.gnu.org/software/libc/manual/html_node/Streams-and-File-Descriptors.html)
 
-STRCHR: https://git.hexanyn.fr/42/malloc/-/blob/master/libft/ft_strrchr.c
-https://www.youtube.com/watch?v=uLgdmGVmEUI
-TO BE FIXED
-•strchr
-•strrchr
-
+to be fixed [final]:
+ft_strtrim
+ft_split
 
 
 
@@ -79,13 +78,12 @@ Completed:
 •tolower
 • ft_itoa
 ft_substr
-ft_strtrim
 ft_strjoin
-ft_split
 ft_strmapi
 ft_striteri
 ft_putnbr_fd
 ft_putstr_fd
 ft_putchar_fd
 ft_putendl_fd
-
+ft_strchr
+ft_strrchr
