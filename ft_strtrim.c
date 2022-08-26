@@ -6,30 +6,47 @@
 /*   By: jgetgood <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 13:40:53 by jgetgood          #+#    #+#             */
-/*   Updated: 2022/07/28 15:59:45 by jgetgood         ###   ########.fr       */
+/*   Updated: 2022/08/26 19:15:54 by jgetgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static int	ft_find(char c, const char *set)
+{
+	int	i;
+
+	i = 0;
+	while (set[i])
+	{
+		if (c == set[i])
+			return (1);
+		i++;
+	}
+	return (0);
+}
+
 char	*ft_strtrim(const char *s1, char const *set)
 {
+	int		front;
+	int		back;
 	int		i;
-	int		j;
-	char	*str;
+	char	*result;
 
-	str = 0;
-	if (s1 != 0 && set != 0)
-	{
-		i = 0;
-		j = ft_strlen(s1);
-		while (s1[i] && ft_strchr(set, s1[i]))
-			i++;
-		while (s1[j - 1] && ft_strchr(set, s1[j - 1]) && j > i)
-			j--;
-		str = (char *)malloc(sizeof(char) * (j - i + 1));
-		if (str)
-			ft_strlcpy(str, &s1[i], j - i + 1);
-	}
-	return (str);
+	if (!(s1 || set))
+		return ((char *)s1);
+	front = 0;
+	while (s1[front] && ft_find(s1[front], set))
+		front++;
+	back = ft_strlen(s1);
+	while (back > front && ft_find(s1[back - 1], set))
+		back--;
+	result = malloc((back - front + 1) * sizeof(*result));
+	if (!result)
+		return (NULL);
+	i = 0;
+	while (front < back)
+		result [i++] = s1[front++];
+	result[i] = '\0';
+	return (&result[0]);
 }

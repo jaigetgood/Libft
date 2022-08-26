@@ -6,13 +6,77 @@
 /*   By: jgetgood <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 16:02:09 by jgetgood          #+#    #+#             */
-/*   Updated: 2022/08/18 14:30:24 by jgetgood         ###   ########.fr       */
+/*   Updated: 2022/08/26 19:27:59 by jgetgood         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	ft_freeup(char *strs)
+static size_t	ft_wordcount(char const *s, char h)
+{
+	size_t	i;
+	size_t	count;
+	char	y;
+
+	i = 0;
+	count = 0;
+	y = 1;
+	while (s[i])
+	{
+		if (y && s[i] != h)
+		{
+			y = 0;
+			count++;
+		}
+		else if (!y && s[i] == h)
+			y = 1;
+		i++;
+	}
+	return (count);
+}
+
+static char	*ft_string(char const **ss, char c)
+{
+	char	*str;
+	size_t	i;
+
+	i = 0;
+	while (**ss && **ss == c)
+		(*ss)++;
+	while ((*ss)[i] && **ss == c)
+		i++;
+	str = ft_calloc(i + 1, sizeof(char));
+	if (!str)
+		return (NULL);
+	ft_memcpy(str, *ss, i);
+	*ss += i;
+	return (str);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	unsigned int	count;
+	size_t			i;
+	char			**strs;
+
+	i = 0;
+	if (!s)
+		return (NULL);
+	count = ft_wordcount(s, c);
+	strs = ft_calloc(count + 1, sizeof(char *));
+	if (!strs)
+		return (strs);
+	while (i < count)
+	{
+		strs[i] = ft_string(&s, c);
+		if (!strs[i])
+			return (NULL);
+		i++;
+	}
+	strs[i] = NULL;
+	return (strs);
+}
+/*static void	ft_freeup(char *strs)
 {
 	int	i;
 
@@ -112,4 +176,4 @@ char	**ft_split(const char *s, char c)
 		i++;
 	}
 	return (strs);
-}
+}*/
